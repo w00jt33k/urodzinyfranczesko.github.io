@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16</title>
+</head>
+
+<body>
+  <div class="container"><span>Wszykiego najlepszego Franek.</span></div>
+
+  <div class="slides">
+    <div class="content display-container">
+        <div class="display-container mySlides">
+          <img src="sraka.jpg" alt="zdjecie"  width="40%">
+        </div>
+  
+        <div class="display-container mySlides">
+          <img src="nigger.jpg" alt="zdjecie" width="40%">
+        </div>
+  
+        <div class="display-container mySlides">
+          <img src="essen.jpg" alt="zdjecie" width="40%">
+        </div>
+  
+        <div class="display-container mySlides">
+          <img src="essa2.jpg" alt="zdjecie" width="40%">
+        </div>
+  
+        <div class="display-container mySlides">
+          <img src="zdjecie6.jpg" alt="zdjecie" width="40%">
+        </div>
+  
+        <div class="display-container mySlides">
+          <img src="essa.jpg" alt="zdjecie" width="40%">
+        </div>
+  
+        <div class="display-container mySlides">
+          <img src="essa2.jpg" alt="zdjecie" width="40%">
+        </div>
+  
+        <button class="przycisk1" class="button display-left black" onclick="plusDivs(-1)"
+          style="width: 50px; height: 50px;">&#10094;</button>
+        <button class="przycisk2" class="button display-right black" onclick="plusDivs(1)"
+          style="width: 50px; height: 50px;">&#10095;</button>
+    </div>
+  </div>
+
+</body>
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = x.length }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+        }
+        function op(obj) {
+          x = document.getElementById(obj);
+          if (x.style.display == "none") x.style.display = "block";
+          else x.style.display = "none"
+        }
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+      </script>
+</html>
